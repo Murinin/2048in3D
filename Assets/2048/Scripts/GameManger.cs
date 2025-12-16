@@ -23,7 +23,15 @@ public class GameManger : MonoBehaviour
 
     public static void MakeChangesToGameScore(CubeControler dice)
     {
+        CurrentGameScore += dice.cubeNumber;
 
+        if (ReckorGameScore < CurrentGameScore)
+        {
+            ReckorGameScore = CurrentGameScore;
+            OnNewRecordAchived.Invoke();    
+        }
+
+        OnMakingChangesToGameScore.Invoke();
     }
 
 }

@@ -22,7 +22,7 @@ public class CubeControler : MonoBehaviour
     {
         for (int i = 0; i < cubeInfo.Length; i++)
         {
-            cubeInfo[i].text = $'{CubeNumber}';
+            cubeInfo[i].text = $"{cubeNumber}";
         }
     }
 
@@ -36,7 +36,7 @@ public class CubeControler : MonoBehaviour
             {
 
                 //расчитываем центральную точку между кубами
-                Vector3 thisCubePos = collision.gameObject.transform.position;
+                Vector3 thisCubePos = transform.position;
                 Vector3 CollisionCubePos = collision.gameObject.transform.position;
                 Vector3 center = (thisCubePos + CollisionCubePos) / 2f;
 

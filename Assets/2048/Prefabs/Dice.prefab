@@ -356,6 +356,8 @@ GameObject:
   - component: {fileID: 3277375560918004650}
   - component: {fileID: 7522883349595613930}
   - component: {fileID: 1895797805337380815}
+  - component: {fileID: 988349850225632287}
+  - component: {fileID: 7226021019750448121}
   m_Layer: 0
   m_Name: Dice
   m_TagString: Untagged
@@ -453,6 +455,54 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &988349850225632287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297972488932729675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aceef55da9876543b8be0ead6491403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 100
+  cubeInfo:
+  - {fileID: 5513801269258365740}
+  - {fileID: 6942650650875517784}
+  - {fileID: 6562819629886134777}
+  - {fileID: 3178295150161850194}
+  - {fileID: 3482242519395386775}
+  - {fileID: 4834195749404151946}
+  cubeNumber: 2
+--- !u!54 &7226021019750448121
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297972488932729675}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6391811734725375454
 GameObject:
   m_ObjectHideFlags: 0

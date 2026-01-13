@@ -3,8 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class RetartButton : MonoBehaviour
 {
-    public void RetsartButton()
+    public void OnButtonClick()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }
